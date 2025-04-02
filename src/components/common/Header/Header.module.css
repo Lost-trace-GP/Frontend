@@ -1,0 +1,85 @@
+/* --- Header Layout --- */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+    z-index: 1000;
+    /* background-color: #fff; */
+}
+
+/* Logo & Text */
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+/* Navbar Links */
+.navbar {
+  display: flex;
+  gap: 150px; 
+}
+
+.navLink {
+  font-size: 18px;
+  color: #2d2d2d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  color: #1e40af;
+}
+
+.navLinkActive {
+  font-weight: 700; 
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.button {
+  background: #60a5fa;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #1e40af;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
